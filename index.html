@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Anuu🎉</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    overflow: hidden;
+}
+
+.card {
+    background: white;
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+    width: 92%;
+    max-width: 750px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+    animation: pop 1s ease;
+}
+
+h1 {
+    color: #ff1744;
+    font-size: 64px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 28px;
+    color: #111;
+    line-height: 2.1;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #555;
+}
+
+@keyframes pop {
+    from { transform: scale(0.3); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Confetti */
+.confetti {
+    position: fixed;
+    width: 14px;
+    height: 14px;
+    top: -10px;
+    animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>🎉 HAPPY BIRTHDAY Anuu🎉</h1>
+
+    <p>
+        Tomorrow is your birthday, and I just want to say how lucky I am to have you in my life.  
+        You’re not just a friend, you’re like family to me.  
+        You’ve always been there in every situation, making hard times easier and good moments even better.  
+        Your presence brings positivity, laughter, and strength.  
+        I truly wish you endless happiness, success, and everything you dream of.  
+        May your life be filled with smiles and good memories.
+    </p>
+
+    <p><b>HAPPY BIRTHDAY FROM YOUR CUTUUU! 🎂❤️</b></p>
+
+    <div class="footer">— From your Sourav 💖</div>
+</div>
+
+<script>
+for (let i = 0; i < 70; i++) {
+    let c = document.createElement("div");
+    c.className = "confetti";
+    c.style.left = Math.random() * 100 + "vw";
+    c.style.backgroundColor =
+        ["#ff1744", "#ffd700", "#00e5ff", "#76ff03"][Math.floor(Math.random() * 4)];
+    c.style.animationDuration = (Math.random() * 3 + 2) + "s";
+    document.body.appendChild(c);
+}
+</script>
+
+</body>
+</html>
